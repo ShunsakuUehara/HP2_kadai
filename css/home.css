@@ -1,0 +1,402 @@
+/* ページ全体のスタイル */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ナビゲーションバーのスタイル */
+nav {
+  background-color: #333;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  /* ナビゲーションを右寄せにする */
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* ナビゲーションリストのスタイル */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* ナビゲーションリストの項目のスタイル */
+nav ul li {
+  margin-left: 15px;
+}
+
+/* 最後のナビゲーションリスト項目の余白をリセット */
+nav ul li:last-child {
+  margin-left: 0;
+}
+
+/* ナビゲーションリンクのスタイル */
+nav ul li a {
+  color: #fff;
+  /* テキストを白色にする */
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* ホバー時のスタイル */
+nav ul li a:hover {
+  background-color: #555;
+}
+
+.main-view {
+  background-image: url(../img/top.jpg);
+  /* メインビューの背景画像を指定 */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* メインビューの高さをビューポートの高さに合わせる */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.main-view h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.main-view p {
+  font-size: 24px;
+  margin: 10px 0 0;
+}
+
+.content {
+  padding: 40px;
+}
+
+.section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.section p {
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  margin: 20px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* ナビゲーションリンクの文字色を白に設定 */
+nav ul li a {
+  color: #fff;
+}
+
+/* ナビゲーションリンクのホバー時の背景色を指定 */
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* メインビューのタイトルと説明文のスタイル */
+.main-view h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #fff;
+  /* タイトルの文字色を白に設定 */
+}
+
+.main-view p {
+  font-size: 24px;
+  margin: 10px 0 0;
+  color: #fff;
+  /* 説明文の文字色を白に設定 */
+}
+
+/* セクションの見出しと本文のスタイル */
+.section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  color: #000;
+  /* 見出しの文字色を黒に設定 */
+}
+
+.section p {
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #000;
+  /* 本文の文字色を黒に設定 */
+}
+
+/* ボタンのテキスト色を白、背景色を黒に設定 */
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.RESERVE {
+  margin-top: 100px;
+  background: linear-gradient(rgba(0, 149, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../img/reserve.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.RESERVE h1 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.RESERVE p {
+  font-size: 24px;
+  margin: 10px 0 0;
+}
+
+.manzoku {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.manzoku h2 {
+  font-size: 48px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.manzoku p {
+  font-size: 15px;
+  margin: 50px 0 0;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.media img {
+  height: 33.33vh;
+  /* 100vhの1/3 */
+  object-fit: cover;
+  /* 画像のアスペクト比を保ちつつ、指定したサイズにフィットさせる */
+}
+
+.media h2 {
+  font-size: 48px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.media p {
+  font-size: 15px;
+  margin: 50px 0 0;
+}
+
+.food {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.food h2 {
+  font-size: 48px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.food p {
+  font-size: 15px;
+  margin: 50px 50px;
+}
+
+.food-grid {
+  margin: 0 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.food-item {
+  flex-basis: calc(33.33% - 20px);
+  /* 3列に分けるために基本の幅を33.33%に設定し、20pxはマージンのためのスペース */
+  margin: 10px;
+  /* 上下左右に10pxのマージンを設定 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-item img {
+  width: 100%;
+  height: 200px;
+  /* コンテナの幅に合わせて画像を伸縮 */
+  object-fit: cover;
+  /* 画像のアスペクト比を保ちつつ、指定したサイズにフィットさせる */
+}
+
+.food-item p {
+  font-size: 12px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.tokubetu h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.tokubetuimg {
+  margin-top: 100px;
+  background: linear-gradient(rgba(0, 149, 255, 0.8), rgba(0, 0, 255, 0.2)), url(../img/mati.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.tokubetuimg h2 {
+  font-weight: normal;
+  font-size: 32px;
+  padding-top: 20vh;
+}
+
+.button-wrapper {
+  margin-top: auto;
+}
+
+.image-buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-button {
+  margin: 30px 30px;
+  position: relative;
+  width: 300px;
+  /* 画像のサイズをここで設定します。必要に応じて調整してください */
+}
+
+.image-button img {
+  width: 100%;
+  /* 画像を親要素のサイズに合わせます */
+  height: 100px;
+  /* コンテナの幅に合わせて画像を伸縮 */
+  object-fit: cover;
+  /* 画像のアスペクト比を保ちつつ、指定したサイズにフィットさせる */
+}
+
+.image-button-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* テキストを画像の中央に配置します */
+  color: white;
+  font-size: 14px;
+  /* テキストのサイズを設定します。必要に応じて調整してください */
+  text-align: center;
+}
+
+.image-rogos {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-rogo {
+  margin: 10px 10px;
+  position: relative;
+  width: 200px;
+  /* 画像のサイズをここで設定します。必要に応じて調整してください */
+}
+
+.image-rogo img {
+  width: 100%;
+  /* 画像を親要素のサイズに合わせます */
+  height: 100px;
+  /* コンテナの幅に合わせて画像を伸縮 */
+  object-fit: cover;
+  /* 画像のアスペクト比を保ちつつ、指定したサイズにフィットさせる */
+}
+
+.shime p {
+  margin: 50px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.contact {
+  margin-top: 20px;
+  padding-bottom: 5px;
+  background-color: #b2b1b1;
+  /* 灰色 */
+  /* その他のスタイルをここに追加 */
+}
